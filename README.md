@@ -84,6 +84,6 @@ Logistic Regression and Gradient Boosting are the better Models compared to Rand
 
 ## Improvements or Advancements to the Project.
 
-#### • Collecting more Data will alwaysbe advantageous.
+#### • Collecting more Data will always be advantageous.
 #### • We have used many hyper parameters for Random Forrest it has taken time byt gave us good results. Same can be done to rest of the models to acheive better validation scores, accuracy and recall values. More and different hyperparameters can be used to Tune the model
 #### • We can combine these 3 to 4 weak models in creating a new models using Bagging or Boosting. This could result us in a better model with good ROC curve, Validation and Classification reports.

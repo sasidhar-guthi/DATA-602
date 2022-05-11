@@ -40,5 +40,44 @@ Just like the Hit and Run distribution the parking distribution also has a 5 to 
 ### •	Type of Damage caused at places with a certain speed limit:
 The Collisions which resulted in a Destroyed result have a speed limit of 30 and above and most of them occurred at a 40-speed limit. Most of the functioning car conditions are at 35 as Disabling also mostly has 35 as a speed limit.
 
+## Modelling and Evaluation.
 
+### •	The Target variable has 8 classe. I have reduced them to 2 classes because of the time constaint, accuracy and recall scores.
+### • After reducing the classes the distribution of the target variable has shown class imbalances. 
+### • I have used scoring = recall_macro and class_weights = balanced to deal with these class imbalances while training the model.
+### • The Null values in the Dataset are handled by Using SimpleImputer.
+### • The Numerical column (speed limit), is not skewed so I have used mean as the strategy.
+### • For the Categorical columns I have used most frequent as the strategy.
 
+## Models
+
+## Logistic Regression:
+
+### • HyperParameters used for Logistic Regression are 0.1,10,100
+### • After Secondary search hyper parameter c= 400.
+### • Acheived an accuracy of 58% and a recall of 60%.
+### • The Area Under Curve is 65%.
+
+## Decision Tree:
+
+### • HyperParameters used for Decision Tree are max_depth = 1,7,15, min_samples_split = 0.1,0.3,0.8.
+### • After Secondary search hyper parameters are max_depth = 5, min_samples_split = 0.05.
+### • Acheived an accuracy of 57% and a recall of 58%.
+### • The Area Under Curve is 62%.
+
+## Gradient Boosting:
+
+### • HyperParameters used for Gradient Boosting are max_depth = 1,3, n_estimators = 10,20,30.
+### • After Secondary search hyper parameters are n_estimators = 300
+### • Acheived an accuracy of 57% and a recall of 58%.
+### • The Area Under Curve is 67%.
+
+## Random Forrest:
+
+### • HyperParameters used for Random Forrest are max_depth = 5,10,15, n_estimators = 10,50,100, class_weight = balanced, balanced_subsample, max_samples = 1000,2000,5000.
+### • Acheived an accuracy of 57% and a recall of 58%.
+### • The Area Under Curve is 65%.
+
+## Conclusion:
+
+Logistic Regression and Gradient Boosting are the better Models compared to Random Forrest and Decision Tree. I will recommend predicting the Damage Caused to the Vehicle using Logistic Regression or Gradient Boosting.

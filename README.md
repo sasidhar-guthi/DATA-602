@@ -42,12 +42,12 @@ The Collisions which resulted in a Destroyed result have a speed limit of 30 and
 
 ## Modelling and Evaluation.
 
- #### •	The Target variable has 8 classes. I have reduced them to 2 classes because of the time constaint, accuracy and recall scores.
- #### • After reducing the classes the distribution of the target variable has shown class imbalances. 
- #### • I have used scoring = recall_macro and class_weights = balanced to deal with these class imbalances while training the model.
- #### • The Null values in the Dataset are handled by Using SimpleImputer.
- #### • The Numerical column (speed limit), is not skewed so I have used mean as the strategy.
- #### • For the Categorical columns I have used most frequent as the strategy.
+  •	The Target variable has 8 classes. I have reduced them to 2 classes because of the time constaint, accuracy and recall scores.
+  • After reducing the classes the distribution of the target variable has shown class imbalances. 
+  • I have used scoring = recall_macro and class_weights = balanced to deal with these class imbalances while training the model.
+  • The Null values in the Dataset are handled by Using SimpleImputer.
+  • The Numerical column (speed limit), is not skewed so I have used mean as the strategy.
+  • For the Categorical columns I have used most frequent as the strategy.
 
 ## Models
 
